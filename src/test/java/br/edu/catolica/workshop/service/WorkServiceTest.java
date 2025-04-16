@@ -20,7 +20,7 @@ public class WorkServiceTest {
 
     @Test
     void invalidName(){
-        var name = "Teste";
+        var name = " ";
 
         Assertions.assertThrows(IllegalArgumentException.class,() -> this.workService.valid(name));
     }
